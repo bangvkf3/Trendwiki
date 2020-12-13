@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/trendwiki/static/css/main.34b01a76.chunk.css",
-    "main.js": "/trendwiki/static/js/main.057e81d6.chunk.js",
-    "main.js.map": "/trendwiki/static/js/main.057e81d6.chunk.js.map",
-    "runtime-main.js": "/trendwiki/static/js/runtime-main.0599c846.js",
-    "runtime-main.js.map": "/trendwiki/static/js/runtime-main.0599c846.js.map",
-    "static/js/2.c461615f.chunk.js": "/trendwiki/static/js/2.c461615f.chunk.js",
-    "static/js/2.c461615f.chunk.js.map": "/trendwiki/static/js/2.c461615f.chunk.js.map",
-    "index.html": "/trendwiki/index.html",
-    "static/css/main.34b01a76.chunk.css.map": "/trendwiki/static/css/main.34b01a76.chunk.css.map",
-    "static/js/2.c461615f.chunk.js.LICENSE.txt": "/trendwiki/static/js/2.c461615f.chunk.js.LICENSE.txt"
+    "main.css": "/Trendwiki/static/css/main.34b01a76.chunk.css",
+    "main.js": "/Trendwiki/static/js/main.057e81d6.chunk.js",
+    "main.js.map": "/Trendwiki/static/js/main.057e81d6.chunk.js.map",
+    "runtime-main.js": "/Trendwiki/static/js/runtime-main.278c57dd.js",
+    "runtime-main.js.map": "/Trendwiki/static/js/runtime-main.278c57dd.js.map",
+    "static/js/2.c461615f.chunk.js": "/Trendwiki/static/js/2.c461615f.chunk.js",
+    "static/js/2.c461615f.chunk.js.map": "/Trendwiki/static/js/2.c461615f.chunk.js.map",
+    "index.html": "/Trendwiki/index.html",
+    "static/css/main.34b01a76.chunk.css.map": "/Trendwiki/static/css/main.34b01a76.chunk.css.map",
+    "static/js/2.c461615f.chunk.js.LICENSE.txt": "/Trendwiki/static/js/2.c461615f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0599c846.js",
+    "static/js/runtime-main.278c57dd.js",
     "static/js/2.c461615f.chunk.js",
     "static/css/main.34b01a76.chunk.css",
     "static/js/main.057e81d6.chunk.js"
