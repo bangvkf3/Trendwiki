@@ -45,7 +45,7 @@ function Trend({ rank, name, period, category }) {
       <div className="trend__comment">
         <script
           src="https://utteranc.es/client.js"
-          repo="bangvkf3/Trendwiki"
+          repo="bangvkf3/blog-comments"
           issue-term="pathname"
           theme="github-light"
           crossorigin="anonymous"
