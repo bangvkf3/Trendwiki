@@ -10,8 +10,10 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import ReactUtterences from "react-utterances";
 
 const data = require("../output/data3.json");
+const repo = "bangvkf3/blog-comments";
 
 function Trend({ rank, name, period, category }) {
   return (
@@ -43,14 +45,7 @@ function Trend({ rank, name, period, category }) {
         </div>
       </div>
       <div className="trend__comment">
-        <script
-          src="https://utteranc.es/client.js"
-          repo="bangvkf3/blog-comments"
-          issue-term="pathname"
-          theme="github-light"
-          crossorigin="anonymous"
-          async
-        ></script>
+        <ReactUtterences repo={repo} type={"pathname"} />
       </div>
     </section>
   );
