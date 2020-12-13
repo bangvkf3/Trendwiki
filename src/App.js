@@ -1,19 +1,34 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
+import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import About from "./routes/About";
 import Home from "./routes/Home";
+import Trend from "./routes/Trend";
 import "./App.css";
+import trends from "./db";
 
 function App() {
   return (
     <>
+      <Header />
       <HashRouter>
-        <Navigation />
         <Route path="/" exact={true} component={Home} />
-        <Route path="/about" component={About} />
+        {trends.map(trend => (
+          <Route
+            path={`/trend${trend.id + 1}`}
+            render={() => (
+              <Trend
+                key={trend.id}
+                rank={trend.rank}
+                name={trend.name}
+                period={trend.period}
+                category={trend.category}
+              />
+            )}
+          />
+        ))}
+        <Navigation />
       </HashRouter>
-      <footer></footer>
     </>
   );
 }

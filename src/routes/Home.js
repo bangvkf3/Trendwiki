@@ -2,12 +2,17 @@ import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
 import "./Home.css";
+import "../db";
+
+const data = require("../output/data3.json");
 
 class Home extends React.Component {
   state = {
     isLoading: true,
     movies: [],
+    jsonArray: [],
   };
+
   getMovies = async () => {
     const {
       data: {
@@ -19,8 +24,13 @@ class Home extends React.Component {
     // console.log(movies.data.data.movies);
     this.setState({ movies, isLoading: false });
   };
+
+  // getCsv = async () => {
+  //   const data = await readString()
+  // }
   componentDidMount() {
     this.getMovies();
+    console.log(data);
   }
   render() {
     const { isLoading, movies } = this.state;
