@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
 import "./Home.css";
-import "../db";
+import trends from "../db";
 
 const data = require("../output/data3.json");
 
@@ -42,15 +42,14 @@ class Home extends React.Component {
           </div>
         ) : (
           <div className="movies">
-            {movies.map(movie => (
+            {trends.map(trend => (
               <Movie
-                key={movie.id}
-                id={movie.id}
-                year={movie.year}
-                title={movie.title}
-                summary={movie.summary}
-                poster={movie.medium_cover_image}
-                genres={movie.genres}
+                key={trend.id}
+                rank={trend.rank}
+                name={trend.name}
+                period={trend.period}
+                categories={trend.categories}
+                emo={trend.emo}
               />
             ))}
           </div>

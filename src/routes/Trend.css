@@ -1,10 +1,23 @@
+@font-face {
+  font-family: "BMEULJIRO";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "BMEULJIRO";
+}
+
 .trend-container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 84%;
-  padding: 0 30px;
+  padding: 0 60px;
+  margin-top: 15px;
 }
 
 .trend__board {
@@ -14,6 +27,8 @@
   background-color: white;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  padding-top: 40px;
 }
 
 .trend__graph {
@@ -28,5 +43,50 @@
   background-color: white;
   margin: 0 auto;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.trend__rank {
+  font-family: "BMEULJIRO";
+  font-size: 30px;
+  position: absolute;
+  top: -20px;
+  background-color: white;
+  color: navy;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 4px 2px 2px 1px rgba(0, 0, 0, 0.5); */
+  border: 3px solid rgba(0, 0, 0, 0.52);
+}
+
+.trend__name {
+  margin: 0px;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.trend__categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 0px;
+  padding-left: 30px;
+}
+
+.categories__category {
+  margin-right: 10px;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.trend__period {
+  margin: 10px;
+  margin-left: 0px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  font-size: 20px;
 }

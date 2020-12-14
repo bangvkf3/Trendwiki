@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Movie.css";
 import {
+  ResponsiveContainer,
   LineChart,
   Line,
   XAxis,
@@ -13,31 +14,36 @@ import {
 
 const data = require("../output/data3.json");
 
-function Movie({ year, title, summary, poster, genres }) {
+function Movie({ rank, name, period, categories, emo }) {
   return (
     <div className="movie">
       <div className="movie__data">
-        <h3 className="movie__title">Trend</h3>
-        <h5 className="movie__year">기간~기간</h5>
-        <ul className="movie__genres">카테고리</ul>
-        <p className="movie__summary">
-          ㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴ어리;ㄴㅁ얼;ㅣ머ㅣ낭러ㅣ;ㄴ얼;ㅣㅓㅁ니어링머니ㅓ리ㅓㄴ미러ㅣ
-        </p>
+        <h3 className="movie__title">
+          Rank {rank} {emo} {name}
+        </h3>
+        <ul className="movie__genres">
+          {categories.map((genre, index) => (
+            <li key={index} className="genres_genre">
+              {genre}
+            </li>
+          ))}
+        </ul>
+        <h5 className="movie__year">{period}</h5>
       </div>
       <div class="movie__chart">
-        <LineChart
-          width={325}
-          height={200}
-          data={data}
-          margin={{ top: 20, right: 0, left: 0, bottom: 10 }}
-        >
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
-          <XAxis dataKey="period" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Line type="Linear" dataKey="index" stroke="#8884d8" dot={false} />
-        </LineChart>
+        <ResponsiveContainer width="100%" height="100%">
+          <LineChart
+            data={data}
+            margin={{ top: 20, right: 0, left: 0, bottom: 10 }}
+          >
+            {/* <CartesianGrid strokeDasharray="3 3" /> */}
+            <XAxis dataKey="period" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Line type="Linear" dataKey="index" stroke="#8884d8" dot={false} />
+          </LineChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );

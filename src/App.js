@@ -22,7 +22,7 @@ function App() {
                 rank={trend.rank}
                 name={trend.name}
                 period={trend.period}
-                category={trend.category}
+                categories={trend.categories}
               />
             )}
           />

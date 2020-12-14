@@ -6,7 +6,7 @@ function Header() {
     <div className="header-container">
       <div className="header">
         <div className="header__title">
-          <h1>Trend Wiki</h1>
+          <h1>📝 Trend Wiki</h1>
         </div>
         <div className="header__info">
           <h3>202R - Deep Learning</h3>
