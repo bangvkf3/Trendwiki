@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Trendwiki/static/css/main.34b01a76.chunk.css",
-    "main.js": "/Trendwiki/static/js/main.f6591630.chunk.js",
-    "main.js.map": "/Trendwiki/static/js/main.f6591630.chunk.js.map",
+    "main.js": "/Trendwiki/static/js/main.ad733c25.chunk.js",
+    "main.js.map": "/Trendwiki/static/js/main.ad733c25.chunk.js.map",
     "runtime-main.js": "/Trendwiki/static/js/runtime-main.278c57dd.js",
     "runtime-main.js.map": "/Trendwiki/static/js/runtime-main.278c57dd.js.map",
     "static/js/2.7c08eee0.chunk.js": "/Trendwiki/static/js/2.7c08eee0.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.278c57dd.js",
     "static/js/2.7c08eee0.chunk.js",
     "static/css/main.34b01a76.chunk.css",
-    "static/js/main.f6591630.chunk.js"
+    "static/js/main.ad733c25.chunk.js"
   ]
 }
