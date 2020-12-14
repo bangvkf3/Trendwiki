@@ -34,13 +34,13 @@ function Movie({ rank, name, period, categories, emo }) {
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
-            margin={{ top: 20, right: 0, left: 0, bottom: 10 }}
+            margin={{ top: 20, right: 30, left: 0, bottom: 30 }}
           >
             {/* <CartesianGrid strokeDasharray="3 3" /> */}
-            <XAxis dataKey="period" />
+            <XAxis dataKey="period" angle={-30} textAnchor="end" />
             <YAxis />
             <Tooltip />
-            <Legend />
+            <Legend align="center" verticalAlign="top" />
             <Line type="Linear" dataKey="index" stroke="#8884d8" dot={false} />
           </LineChart>
         </ResponsiveContainer>

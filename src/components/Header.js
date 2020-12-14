@@ -9,7 +9,7 @@ function Header() {
           <h1>📝 Trend Wiki</h1>
         </div>
         <div className="header__info">
-          <h3>202R - Deep Learning</h3>
+          <h3>🖥202R - Deep Learning</h3>
         </div>
       </div>
     </div>

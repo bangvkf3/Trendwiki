@@ -37,10 +37,10 @@ function Trend({ rank, name, period, categories }) {
               margin={{ top: 20, right: 40, left: 0, bottom: 10 }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="period" />
+              <XAxis dataKey="period" angle={-30} textAnchor="end" />
               <YAxis />
               <Tooltip />
-              <Legend />
+              <Legend align="center" verticalAlign="top" />
               <Line
                 type="Linear"
                 dataKey="index"
