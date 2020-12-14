@@ -45,7 +45,10 @@ function Trend({ rank, name, period, category }) {
         </div>
       </div>
       <div className="trend__comment">
-        <ReactUtterences repo={repo} type={"title"} />
+        <ReactUtterences
+          repo={`bangvkf3/blog-comments/trend${rank}`}
+          type={"pathname"}
+        />
       </div>
     </section>
   );
