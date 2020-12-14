@@ -22,6 +22,7 @@ function Movie({ rank, name, period, categories, emo }) {
           Rank {rank} {emo} {name}
         </h3>
         <ul className="movie__genres">
+          [Category]
           {categories.map((genre, index) => (
             <li key={index} className="genres_genre">
               {genre}

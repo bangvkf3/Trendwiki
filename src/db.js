@@ -2,9 +2,9 @@ let trends = [
   {
     id: 0,
     rank: 1,
-    name: "Trend 1",
-    period: "2020. 11. 14. ~ 2020. 12. 13.",
-    categories: ["category1", "category2", "category3"],
+    name: "휴대폰용품",
+    period: "2020. 11. 8. ~ 2020. 12. 12.",
+    categories: [" ", "생활/건강", ">", "자동차용품"],
     emo: "🐶",
   },
   {
