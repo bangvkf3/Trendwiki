@@ -25,11 +25,11 @@ function Movie({ rank, name, period, categories, emo, data }) {
   const series = [
     {
       name: "Train index",
-      data: data.slice(0, 731),
+      data: data.slice(1095, 1103),
     },
     {
       name: "Generated index",
-      data: data.slice(731, 1132),
+      data: data.slice(1101, 1132),
     },
   ];
   const UL = mean(data.slice(366, 731));
@@ -53,7 +53,7 @@ function Movie({ rank, name, period, categories, emo, data }) {
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
-            margin={{ top: 30, right: 30, left: 5, bottom: 30 }}
+            margin={{ top: 30, right: 30, left: 7, bottom: 40 }}
           >
             {/* <CartesianGrid strokeDasharray="3 3" /> */}
             <XAxis
@@ -72,7 +72,7 @@ function Movie({ rank, name, period, categories, emo, data }) {
             <Tooltip />
             <Legend align="center" verticalAlign="top" height="40px" />
             {/* <Line type="Linear" dataKey="index" stroke="#8884d8" dot={false} /> */}
-            <Line
+            {/* <Line
               type="Linear"
               data={series[0].data}
               dataKey="index"
@@ -80,7 +80,7 @@ function Movie({ rank, name, period, categories, emo, data }) {
               dot={false}
               name={series[0].name}
               key={series[0].name}
-            />
+            /> */}
             <Line
               type="Linear"
               data={series[1].data}
@@ -92,7 +92,7 @@ function Movie({ rank, name, period, categories, emo, data }) {
             />
 
             <ReferenceLine x="2019.11.8" stroke="blue" strokeDasharray="3 3" />
-            <ReferenceLine
+            {/* <ReferenceLine
               y={UL}
               stroke="red"
               label={{
@@ -102,7 +102,7 @@ function Movie({ rank, name, period, categories, emo, data }) {
                 fontSize: 14,
               }}
               strokeWidth={2}
-            />
+            /> */}
           </LineChart>
         </ResponsiveContainer>
       </div>

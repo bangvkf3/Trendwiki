@@ -28,11 +28,11 @@ function Trend({ rank, name, period, categories, data }) {
   const series = [
     {
       name: "Train index",
-      data: data.slice(0, 731),
+      data: data.slice(735, 1103),
     },
     {
       name: "Generated index",
-      data: data.slice(731, 1132),
+      data: data.slice(1102, 1132),
     },
   ];
   const UL = mean(data.slice(366, 731));
@@ -95,17 +95,6 @@ function Trend({ rank, name, period, categories, data }) {
                 x="2019.11.8"
                 stroke="blue"
                 strokeDasharray="3 3"
-              />
-              <ReferenceLine
-                y={UL}
-                stroke="red"
-                label={{
-                  position: "right",
-                  value: "UL",
-                  fill: "red",
-                  fontSize: 14,
-                }}
-                strokeWidth={2}
               />
             </LineChart>
           </ResponsiveContainer>
