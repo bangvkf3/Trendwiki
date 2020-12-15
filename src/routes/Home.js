@@ -50,6 +50,7 @@ class Home extends React.Component {
                 period={trend.period}
                 categories={trend.categories}
                 emo={trend.emo}
+                data={trend.data}
               />
             ))}
           </div>

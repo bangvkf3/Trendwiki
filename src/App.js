@@ -23,6 +23,7 @@ function App() {
                 name={trend.name}
                 period={trend.period}
                 categories={trend.categories}
+                data={trend.data}
               />
             )}
           />
