@@ -28,11 +28,11 @@ function Trend({ rank, name, period, categories, data }) {
   const series = [
     {
       name: "Train index",
-      data: data.slice(735, 1103),
+      data: data.slice(5, 737),
     },
     {
       name: "Generated index",
-      data: data.slice(1102, 1132),
+      data: data.slice(736, 1132),
     },
   ];
   const UL = mean(data.slice(366, 731));
@@ -56,7 +56,6 @@ function Trend({ rank, name, period, categories, data }) {
               data={data}
               margin={{ top: 30, right: 30, left: 5, bottom: 30 }}
             >
-              <CartesianGrid strokeDasharray="3 3" />
               <XAxis
                 dataKey="period"
                 angle={-30}
@@ -91,10 +90,43 @@ function Trend({ rank, name, period, categories, data }) {
                 name={series[1].name}
                 key={series[1].name}
               />
-              <ReferenceLine
-                x="2019.11.8"
+              {/* <ReferenceLine
+                x="2019.11.13"
                 stroke="blue"
                 strokeDasharray="3 3"
+              /> */}
+              <ReferenceLine
+                x="2020.1.1"
+                stroke="orange"
+                strokeDasharray="3 3"
+                label={{
+                  position: "top",
+                  value: "2020.1.1",
+                  fill: "orange",
+                  fontSize: 14,
+                }}
+              />
+              <ReferenceLine
+                x="2019.1.1"
+                stroke="orange"
+                strokeDasharray="3 3"
+                label={{
+                  position: "top",
+                  value: "2019.1.1",
+                  fill: "orange",
+                  fontSize: 14,
+                }}
+              />
+              <ReferenceLine
+                x="2018.1.1"
+                stroke="orange"
+                strokeDasharray="3 1"
+                label={{
+                  position: "top",
+                  value: "2018.1.1",
+                  fill: "orange",
+                  fontSize: 14,
+                }}
               />
             </LineChart>
           </ResponsiveContainer>

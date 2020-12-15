@@ -25,11 +25,11 @@ function Movie({ rank, name, period, categories, emo, data }) {
   const series = [
     {
       name: "Train index",
-      data: data.slice(1095, 1103),
+      data: data.slice(5, 737),
     },
     {
       name: "Generated index",
-      data: data.slice(1101, 1132),
+      data: data.slice(736, 1132),
     },
   ];
   const UL = mean(data.slice(366, 731));
@@ -71,8 +71,7 @@ function Movie({ rank, name, period, categories, emo, data }) {
 
             <Tooltip />
             <Legend align="center" verticalAlign="top" height="40px" />
-            {/* <Line type="Linear" dataKey="index" stroke="#8884d8" dot={false} /> */}
-            {/* <Line
+            <Line
               type="Linear"
               data={series[0].data}
               dataKey="index"
@@ -80,7 +79,7 @@ function Movie({ rank, name, period, categories, emo, data }) {
               dot={false}
               name={series[0].name}
               key={series[0].name}
-            /> */}
+            />
             <Line
               type="Linear"
               data={series[1].data}
@@ -91,18 +90,40 @@ function Movie({ rank, name, period, categories, emo, data }) {
               key={series[1].name}
             />
 
-            <ReferenceLine x="2019.11.8" stroke="blue" strokeDasharray="3 3" />
-            {/* <ReferenceLine
-              y={UL}
-              stroke="red"
+            {/* <ReferenceLine x="2019.11.13" stroke="blue" strokeDasharray="3 3" /> */}
+            <ReferenceLine
+              x="2020.1.1"
+              stroke="orange"
+              strokeDasharray="3 3"
               label={{
-                position: "right",
-                value: "UL",
-                fill: "red",
+                position: "top",
+                value: "2020.1.1",
+                fill: "orange",
                 fontSize: 14,
               }}
-              strokeWidth={2}
-            /> */}
+            />
+            <ReferenceLine
+              x="2019.1.1"
+              stroke="orange"
+              strokeDasharray="3 3"
+              label={{
+                position: "top",
+                value: "2019.1.1",
+                fill: "orange",
+                fontSize: 14,
+              }}
+            />
+            <ReferenceLine
+              x="2018.1.1"
+              stroke="orange"
+              strokeDasharray="3 1"
+              label={{
+                position: "top",
+                value: "2018.1.1",
+                fill: "orange",
+                fontSize: 14,
+              }}
+            />
           </LineChart>
         </ResponsiveContainer>
       </div>
